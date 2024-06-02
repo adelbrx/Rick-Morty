@@ -43,7 +43,7 @@ Cette application utilise l'API Rick and Morty pour afficher une liste de person
 1. Clonez le dépôt :
 
    ```bash
-   git clone github.com/adelbrx/Rick-Morty.git
+   git clone https://github.com/adelbrx/Rick-Morty.git
    cd <NOM_DU_DEPOT>
    ```
 
