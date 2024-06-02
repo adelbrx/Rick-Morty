@@ -24,8 +24,6 @@ const HomePage = () => {
       .catch((error) => console.error(error));
   }, [page, filter, search]);
 
-  console.log(filter);
-
   return (
     <div className={style.homepage}>
       <Header
