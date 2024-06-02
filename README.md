@@ -66,20 +66,20 @@ Cette application utilise l'API Rick and Morty pour afficher une liste de person
 1. Clonez le dépôt :
 
    ```bash
-   git clone <URL_DU_DEPOT>
-   cd <NOM_DU_DEPOT>
+   git clone https://github.com/adelbrx/Rick-Morty.git
+   cd Rick-Morty/
    ```
 
 2. Construisez l'image Docker :
 
    ```bash
-   docker build -t brandify-rick-and-morty .
+   docker build -t rick-and-morty .
    ```
 
 3. Lancez un conteneur :
 
    ```bash
-   docker run -p 3000:3000 brandify-rick-and-morty
+   docker run -p 3000:3000 rick-and-morty
    ```
 
 4. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
