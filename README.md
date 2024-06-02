@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Rick and Morty Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Cette application utilise l'API Rick and Morty pour afficher une liste de personnages de la série. Les fonctionnalités incluent la pagination, la recherche par nom de personnage, le filtrage par état (Vivant ou Mort), et une page de détail pour chaque personnage. L'application est conçue pour être entièrement responsive et ne nécessite pas de rechargement de page pour la navigation entre la liste et les détails des personnages (SPA - Single Page Application). Le thème choisi pour cette application est **Minimaliste**, offrant une interface minimal et simple.
 
-In the project directory, you can run:
+## Fonctionnalités
 
-### `npm start`
+### Page d'Accueil (Index)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Logo** : Cliquer sur le logo renvoie à la page d'accueil.
+- **Liste des Personnages** : Affichage paginé de tous les personnages.
+- **Boutons de Filtrage** : Filtrage des personnages par état (tous,Vivant, Mort).
+- **Recherche Textuelle** : Recherche par nom de personnage.
+- **Informations sur les Personnages** : Affichage du nom, de l'image et du statut (Vivant ou Mort) des personnages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Page de Détail du Personnage
 
-### `npm test`
+- **Bouton de Retour** : Retour à la page d'accueil.
+- **Informations sur le Personnage** : Affichage de l'image, du nom, et d'autres informations pertinentes sur le personnage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contraintes Techniques
 
-### `npm run build`
+- **Routage Côté Front** : Utilisation de JavaScript pour naviguer sans rechargement de page.
+- **URLs de Détail** : L'URL de la page de détail permet de rendre les informations du personnage correspondant (par exemple, `/character/1`).
+- **Responsivité** : Le site est entièrement responsive.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Utilisées
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend** : HTML, CSS, JavaScript (React JS - React Router)
+- **API** : [Rick and Morty API](https://rickandmortyapi.com/documentation/)
+- **Déploiement** : Node.js, Docker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instructions de Déploiement
 
-### `npm run eject`
+### Prérequis
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js installé
+- Docker installé (optionnel)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Lancement via Node.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clonez le dépôt :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone <URL_DU_DEPOT>
+   cd <NOM_DU_DEPOT>
+   ```
 
-## Learn More
+2. Installez les dépendances :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Lancez l'application :
 
-### Code Splitting
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+### Lancement via Docker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clonez le dépôt :
 
-### Making a Progressive Web App
+   ```bash
+   git clone <URL_DU_DEPOT>
+   cd <NOM_DU_DEPOT>
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Construisez l'image Docker :
 
-### Advanced Configuration
+   ```bash
+   docker build -t brandify-rick-and-morty .
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Lancez un conteneur :
 
-### Deployment
+   ```bash
+   docker run -p 3000:3000 brandify-rick-and-morty
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 
-### `npm run build` fails to minify
+## Accessibilité en Ligne
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+L'application est déployée en ligne, vous pouvez y accéder via l'URL suivante : [https://adel-bereksi-test-rickandmorty.netlify.app/]
+
+## Auteur
+
+Adel Bereksi
+
+## Remerciements
+
+- Merci à l'équipe de la [Rick and Morty API](https://rickandmortyapi.com/) pour l'API incroyable.
+- Merci à [Inkscape](https://inkscape.org/fr/) et [Gimp](https://www.gimp.org/downloads/) pour les logiciels de création graphique gratuits.

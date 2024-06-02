@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.filter_buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.filter_buttons button {
+  background-color: #fff;
+  color: #050e2a;
+  border: 1.6px solid rgb(5, 14, 42);
+  border-radius: 1px;
+  padding: 0.5rem 1rem;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.filter_buttons button:hover {
+  background-color: #050e2a;
+  color: #fff;
+  border: 1.6px solid #050e2a;
+}
+
+.filter_buttons button.activated {
+  color: #fff;
+  background-color: #050e2a;
+  border: 1.6px solid #050e2a;
+}
+
+@media (max-width: 768px) {
+  .filter_buttons button {
+    font-size: 10px;
+    padding: 0.4rem 0.8rem;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter_buttons button {
+    font-size: 9px;
+    padding: 0.3rem 0.6rem;
+    margin: 0 2px;
+  }
+}

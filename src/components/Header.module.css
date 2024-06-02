@@ -1,0 +1,36 @@
+.header {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* @media (max-width: 992px) {
+  .header {
+    align-items: center; 
+  }
+
+  .navigation {
+    flex-direction: column; 
+    align-items: center;
+}
+} */
+
+@media (max-width: 768px) {
+  .header {
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+}

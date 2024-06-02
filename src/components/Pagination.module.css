@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.6rem 0;
+}
+
+.pagination button {
+  background: #050e2a;
+  border: 1.6px solid #050e2a;
+  color: #fff;
+  border-radius: 1px;
+  padding: 0.5rem 1rem;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pagination button:hover,
+.pagination button:active,
+.pagination button:focus {
+  background: #fff;
+  color: #050e2a;
+  border: 1.6px solid #050e2a;
+}
+
+@media (max-width: 768px) {
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+    margin: 0 5px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pagination button {
+    padding: 0.3rem 0.6rem;
+    margin: 0 3px;
+    font-size: 10px;
+  }
+}
