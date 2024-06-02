@@ -73,13 +73,13 @@ Cette application utilise l'API Rick and Morty pour afficher une liste de person
 2. Construisez l'image Docker :
 
    ```bash
-   docker build -t rick-and-morty .
+   sudo docker build -t rick-and-morty .
    ```
 
 3. Lancez un conteneur :
 
    ```bash
-   docker run -p 3000:3000 rick-and-morty
+   sudo docker run -p 3000:3000 rick-and-morty
    ```
 
 4. Ouvrez votre navigateur et accédez à `http://localhost:3000`.
