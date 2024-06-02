@@ -44,7 +44,7 @@ Cette application utilise l'API Rick and Morty pour afficher une liste de person
 
    ```bash
    git clone https://github.com/adelbrx/Rick-Morty.git
-   cd <NOM_DU_DEPOT>
+   cd Rick-Morty/
    ```
 
 2. Installez les dépendances :
